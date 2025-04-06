@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    color: azure;
+}
+
+.fundo{
+    background-image: url("/assets/imgs/bg1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containermenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    text-align: center;   
+}
+.header{
+    padding: 60px 4%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: -60px;
+    transition: 0.9s;
+}
+header.rolagem{
+    background-color: azure;
+    padding: 10px 4%;
+    box-shadow: 0px 10px 10px #6a463334;
+}
+header.rolagem a{
+    color: #EEA21B;
+}
+header.rolagem p{
+    color: #EEA21B;
+}
+#energ{
+    font-weight: 800;
+    font-size: 1.8em;
+}
+.ulnav{
+    display: flex;
+    list-style: none;
+    gap: 8vw ;
+    
+}
+.containermenu a{
+    text-decoration: none;
+}
+.slogam{
+    transition: 0.3s;
+    text-align: center;   
+    font-size: 5.5vw;
+    line-height: 1.1;
+    text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.226);
+}
+.fut{
+    color: #EEA21B;
+}
+
+footer{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    border-bottom: 5px solid #EEA21B;
+}
+footer p{
+    color: #EEA21B;
+}
+.fenerg{
+    padding: 30px;
+    font-size: 1.8em;
+    font-weight: 800;
+    margin-bottom: -20px;
+}
+.linha-horizontal {
+    margin-left: auto ;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    height: 0.5px;
+    width: 50%;
+    background-color: rgb(231, 231, 231);
+  }
+.redes{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-top: -20px;
+    
+}
+.redes .icons i:hover{
+    color: #f3bc5e;
+    transition: 0.3s;
+}
+.icons i{
+    font-size: 1.7em;
+    color: #EEA21B;
+    cursor: pointer;
+}
+.direitos{
+    padding: 10px;
+}
