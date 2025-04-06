@@ -12,7 +12,10 @@
 }
 
 main{
+
+    margin: auto;
     height: 5000px;
+    width: 76.6vw;
 }
 .fundo{
     background-image: url("/assets/imgs/bg1.png");
@@ -43,9 +46,9 @@ main{
     transition: 0.9s;
 }
 header.rolagem{
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     padding: 10px 4%;
-    box-shadow: 0px 10px 10px #6a463334;
+    box-shadow: 0px 2px 11px #6a463315;
 }
 header.rolagem a{
     color: var(--cor1);
@@ -54,10 +57,10 @@ header.rolagem p{
     color: var(--cor1);
 }
 header.rolagem a:hover{
-    color: #d39326;
+    color: #e29613;
 }
 header.rolagem #energ:hover{
-    color: #d39326;
+    color: #e29613;
 }
 #energ{
     font-weight: 800;
@@ -190,6 +193,31 @@ header.rolagem #energ:hover{
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+.secmapa{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#mapa{
+    align-items: center;
+    width: 100%;
+    
+}
+.sobre{
+    width: 50vw;
+    text-align: center;
+}
+.sobre spam{
+    color: var(--cor1);
+    font-weight: 600;
+}
+.sobre p{
+    color: rgb(19, 19, 19);
 }
 
 
