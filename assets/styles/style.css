@@ -7,6 +7,13 @@
     color: azure;
 }
 
+:root{
+    --cor1: #EEA21B;
+}
+
+main{
+    height: 5000px;
+}
 .fundo{
     background-image: url("/assets/imgs/bg1.png");
     background-position: center;
@@ -16,8 +23,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.068);
 }
 .containermenu{
+    
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -25,6 +34,7 @@
     text-align: center;   
 }
 .header{
+    z-index: 10;
     padding: 60px 4%;
     width: 100vw;
     position: fixed;
@@ -38,10 +48,16 @@ header.rolagem{
     box-shadow: 0px 10px 10px #6a463334;
 }
 header.rolagem a{
-    color: #EEA21B;
+    color: var(--cor1);
 }
 header.rolagem p{
-    color: #EEA21B;
+    color: var(--cor1);
+}
+header.rolagem a:hover{
+    color: #d39326;
+}
+header.rolagem #energ:hover{
+    color: #d39326;
 }
 #energ{
     font-weight: 800;
@@ -51,6 +67,15 @@ header.rolagem p{
     display: flex;
     list-style: none;
     gap: 8vw ;
+    
+}
+.linksnav{
+    font-weight: 400;
+    color: white;
+}
+.linksnav:hover, #energ:hover{
+    color: rgb(209, 209, 209);
+    transition: 0.3s;
     
 }
 .containermenu a{
@@ -64,12 +89,119 @@ header.rolagem p{
     text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.226);
 }
 .fut{
-    color: #EEA21B;
+    color: var(--cor1);
 }
+
+.areasdeatuacao{   
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 40px;
+    justify-content: center;
+    margin-top: -75px;
+}
+
+.comercializacao, .instalacao, .manutencao{
+    width: 275px;
+    height: 360px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.171);
+    border-radius: 25px;
+}
+.comercializacao{
+    background-image: url('/assets/imgs/comercializacao.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    position: relative;
+}
+.comertext{
+    position: absolute;
+    background-color: #eea11bc0;
+    border-radius: 0px 0px 25px 25px;
+    padding: 25px;
+    flex-wrap: nowrap;
+    text-align: center;
+    box-shadow: 0px -40px 25px 25px #eea11bc0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(200px);
+    transition:  opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;;
+}
+.comercializacao:hover .comertext{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.instalacao{
+    background-image: url('/assets/imgs/instalacao.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    position: relative;
+}
+.instext{
+    position: absolute;
+    background-color: #eea11bc0;
+    border-radius: 0px 0px 25px 25px;
+    padding: 25px;
+    flex-wrap: nowrap;
+    text-align: center;
+    box-shadow: 0px -40px 25px 25px #eea11bc0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(200px);
+    transition:  opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+.instalacao:hover .instext{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.manutencao{
+    background-image: url('/assets/imgs/manutencao.png');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    position: relative;
+}
+.mantext{
+    position: absolute;
+    background-color: #eea11bc0;
+    border-radius: 0px 0px 25px 25px;
+    padding: 25px;
+    flex-wrap: nowrap;
+    text-align: center;
+    box-shadow: 0px -40px 25px 25px #eea11bc0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(200px);
+    transition:  opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+.manutencao:hover .mantext{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+
+
+
+
 
 footer{
     height: 250px;
     display: flex;
+    background-color: #f7f7f7;
     flex-direction: column;
     text-align: center;
     justify-content: space-evenly;
