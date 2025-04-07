@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
-    color: azure;
+    color: #161616;
 }
 
 :root{
@@ -12,10 +12,11 @@
 }
 
 main{
-
+    background-color: bisque;
     margin: auto;
-    height: 5000px;
+    /* height: 5000px; */
     width: 76.6vw;
+    max-width: 982.2px;
 }
 .fundo{
     background-image: url("/assets/imgs/bg1.png");
@@ -53,6 +54,9 @@ header.rolagem{
 header.rolagem a{
     color: var(--cor1);
 }
+header.rolagem #energ{
+    color: var(--cor1);
+}
 header.rolagem p{
     color: var(--cor1);
 }
@@ -63,6 +67,7 @@ header.rolagem #energ:hover{
     color: #e29613;
 }
 #energ{
+    color: #fff;
     font-weight: 800;
     font-size: 1.8em;
 }
@@ -74,7 +79,7 @@ header.rolagem #energ:hover{
 }
 .linksnav{
     font-weight: 400;
-    color: white;
+    color: #fff;
 }
 .linksnav:hover, #energ:hover{
     color: rgb(209, 209, 209);
@@ -85,6 +90,7 @@ header.rolagem #energ:hover{
     text-decoration: none;
 }
 .slogam{
+    color: #fff;
     transition: 0.3s;
     text-align: center;   
     font-size: 5.5vw;
@@ -96,16 +102,15 @@ header.rolagem #energ:hover{
 }
 
 .areasdeatuacao{   
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    gap: 40px;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     margin-top: -75px;
 }
 
 .comercializacao, .instalacao, .manutencao{
-    width: 275px;
-    height: 360px;
+    width: 300px;
+    height: 370px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.171);
     border-radius: 25px;
@@ -195,7 +200,52 @@ header.rolagem #energ:hover{
     transform: translateY(0);
 }
 
+.res-ind{
+    display: flex;
+    margin-top: 60px;
+    gap: 80px;
+    
+}
+.res-ind spam{
+    color: var(--cor1);
+}
+.res-ind h2{
+    
+    font-size: 3rem;
+    line-height: 1.1;
+}
+.res-ind p{
+    font-size: 11px;
+    width: 40%;
+    justify-content: center;
+    align-self: center;
+}
+
+.gp{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 60px;
+    width: 100%;
+    
+}
+.grafico, .paineis{
+    background-color: #e29613;
+    border-radius: 25px;
+    width: 300px;
+    height: 360px;
+}
+.grafico{
+    width: 35%;
+}
+.paineis{
+    width: 65%;
+}
+
+
+
 .secmapa{
+    border-radius: 25px;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
@@ -204,8 +254,10 @@ header.rolagem #energ:hover{
 
 }
 #mapa{
+    border-radius: 25px;
     align-items: center;
     width: 100%;
+    height: ;
     
 }
 .sobre{
