@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
+
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
@@ -16,7 +17,7 @@ main{
     margin: auto;
     /* height: 5000px; */
     width: 76.6vw;
-    max-width: 982.2px;
+    /* max-width: 982.2px; */
 }
 .fundo{
     background-image: url("/assets/imgs/bg1.png");
@@ -109,8 +110,8 @@ header.rolagem #energ:hover{
 }
 
 .comercializacao, .instalacao, .manutencao{
-    width: 300px;
-    height: 370px;
+    width: 30vw;
+    height: 32vw;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.171);
     border-radius: 25px;
@@ -210,15 +211,24 @@ header.rolagem #energ:hover{
     visibility: visible;
     transform: translateY(0);
 }
-
+.p-areas-de-atuacao{
+    font-size: 1.3rem;
+}
 .res-ind{
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
-    gap: 80px;
-    
+    gap: 120px;
+
+ 
 }
-.res-ind spam{
+.res-ind .resindspam1{
+    font-size: 1.4em ;
     color: var(--cor1);
+}
+.res-ind .resindspam2, .res-ind .resindspam3{
+    font-size: 1.2em;
 }
 .res-ind h2{
     
@@ -226,10 +236,14 @@ header.rolagem #energ:hover{
     line-height: 1.1;
 }
 .res-ind p{
-    font-size: 11px;
-    width: 40%;
+    padding: 10px;
+    width: 30vw;
+    font-size: 1.3rem;
+    text-align: justify;
     justify-content: center;
-    align-self: center;
+}
+.res-ind .resindspamcor{
+    color: var(--cor1);
 }
 
 .gp{
@@ -243,12 +257,10 @@ header.rolagem #energ:hover{
 .natureza, .paineis{
     background-color: #e29613;
     border-radius: 25px;
-    width: 300px;
-    height: 360px;
+    width: 30vw;
+    height: 50vh;
 }
-.grafico{
-    width: 35%;
-}
+
 .paineis{
     background-color: black;
     width: 65%;
@@ -256,6 +268,10 @@ header.rolagem #energ:hover{
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
+}
+.paineis p{
+    font-size: 1.6rem;
 }
 
 
@@ -295,6 +311,7 @@ header.rolagem #energ:hover{
 
 
 footer{
+    
     height: 250px;
     display: flex;
     background-color: #f7f7f7;
