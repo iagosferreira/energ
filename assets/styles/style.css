@@ -114,7 +114,18 @@ header.rolagem #energ:hover{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 6px 10px 1px rgba(0, 0, 0, 0.171);
     border-radius: 25px;
+    color: #fff;
 }
+.comertext{
+    color: #fff;
+}
+.instext{
+    color: #fff;
+}
+.mantext{
+    color: #fff;
+}
+
 .comercializacao{
     background-image: url('/assets/imgs/comercializacao.png');
     background-position: center top;
@@ -229,7 +240,7 @@ header.rolagem #energ:hover{
     width: 100%;
     
 }
-.grafico, .paineis{
+.natureza, .paineis{
     background-color: #e29613;
     border-radius: 25px;
     width: 300px;
@@ -239,7 +250,12 @@ header.rolagem #energ:hover{
     width: 35%;
 }
 .paineis{
+    background-color: black;
     width: 65%;
+    background-image: url('/assets/imgs/paineis.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -257,7 +273,7 @@ header.rolagem #energ:hover{
     border-radius: 25px;
     align-items: center;
     width: 100%;
-    height: ;
+    
     
 }
 .sobre{
