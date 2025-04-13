@@ -262,7 +262,6 @@ header.rolagem #energ:hover{
 }
 
 .paineis{
-    background-color: black;
     width: 65%;
     background-image: url('/assets/imgs/paineis.png');
     background-position: center top;
@@ -271,7 +270,9 @@ header.rolagem #energ:hover{
     box-sizing: border-box;
 }
 .paineis p{
-    font-size: 1.6rem;
+    font-size: 1.2vw;
+    padding: 10px;
+    
 }
 
 
